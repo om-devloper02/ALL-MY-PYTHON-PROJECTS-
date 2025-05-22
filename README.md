@@ -1,4 +1,4 @@
-===================Connectin Whizttech chatbot=======================
+===================#Connectin Whizttech chatbot=======================
 
 
 # 🎓 Connectinwhizttech Admission ChatBot
@@ -98,7 +98,7 @@ This project is for educational/demo purposes.
 
 
 
-===================Connectinwhizttech Voice Chatbo=======================
+===================#Connectinwhizttech Voice Chatbo=======================
 
 
 # 🎓 Connectinwhizttech Voice Chatbot + Python Learning Tracker
@@ -197,4 +197,110 @@ Integrate with online course APIs.
 📞 Contact
 For admissions or inquiries, contact Ms. Shruti Jain at Connectin Whizttech, Chhatrapati Sambhajinagar
 📱 Phone: 9921990176
+
+
+==============# Python Restaurant Ordering System - Bhakri House================
+
+
+
+# 🥘 Python Restaurant Ordering System - Bhakri House
+
+This is a beginner-friendly Python console application that simulates a food ordering system for a Maharashtrian-style restaurant called "Bhakri House".
+
+---
+
+## 📋 Features
+
+- Menu-based item selection
+- Order confirmation with pricing
+- Supports up to 4 items per order
+- Calculates and displays the final bill
+
+---
+
+## 🧾 Menu
+
+Maharashtrian Veg Thali : ₹120
+Special Veg Thali : ₹160
+Bhakri Thali (2 Bhakris) : ₹130
+Pithla Bhakri : ₹100
+Zunka Bhakri : ₹90
+Chapati Bhaji Plate : ₹80
+Varan Bhat + Papad : ₹70
+Matki Usal + Bhakri : ₹110
+
+yaml
+Copy
+Edit
+
+---
+
+## ▶️ How to Run
+
+1. Save the Python code in a file, e.g. bhakri_house.py
+2. Open a terminal and run:
+
+```bash
+python bhakri_house.py
+Follow the on-screen instructions to place your order.
+
+💻 Sample Code
+python
+Copy
+Edit
+# Define the menu of restaurant
+menu = {
+    'Maharashtrian Veg Thali': 120,
+    'Special Veg Thali': 160,
+    'Bhakri Thali (2 Bhakris)': 130,
+    'Pithla Bhakri': 100,
+    'Zunka Bhakri': 90,
+    'Chapati Bhaji Plate': 80,
+    'Varan Bhat + Papad': 70,
+    'Matki Usal + Bhakri': 110,
+}
+
+print("WELCOME TO PYTHON RESTAURANT //Bhakri House//")
+print("\nMaharashtrian Veg Thali:120\nSpecial Veg Thali:160\nBhakri Thali (2 Bhakris):130\nPithla Bhakri:100\nZunka Bhakri:90\nChapati Bhaji Plate:80\nVaran Bhat + Papad:70\nMatki Usal + Bhakri:110")
+
+order_total = 0
+
+item_1 = input("Enter the name of item you want to order = ")
+if item_1 in menu:
+    order_total += menu[item_1]
+    print(f"Your item {item_1} has been added to your order")
+else:
+    print(f"Ordered item {item_1} is not available yet!")
+
+another_order = input("Do you want to add another item? (Yes/No) ")
+if another_order == "Yes":
+    item_2 = input("Enter the name of second item = ")
+    if item_2 in menu:
+        order_total += menu[item_2]
+        print(f"Item {item_2} has been added to order")
+    else:
+        print(f"Ordered item {item_2} is not available yet!")
+
+another_order = input("Do you want to add another item? (Yes/No) ")
+if another_order == "Yes":
+    item_3 = input("Enter the name of third item = ")
+    if item_3 in menu:
+        order_total += menu[item_3]
+        print(f"Item {item_3} has been added to order")
+    else:
+        print(f"Ordered item {item_3} is not available yet!")
+
+another_order = input("Do you want to add another item? (Yes/No) ")
+if another_order == "Yes":
+    item_4 = input("Enter the name of fourth item = ")
+    if item_4 in menu:
+        order_total += menu[item_4]
+        print(f"Item {item_4} has been added to order")
+    else:
+        print(f"Ordered item {item_4} is not available yet!")
+
+print(f"\n🧾 Total Amount to Pay: ₹{order_total}")
+🧠 Author
+Developed by Omkar as part of a Python learning journey.
+
 
