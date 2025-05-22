@@ -1,7 +1,7 @@
 ===================Connectin Whizttech chatbot=======================
 
 
-🎓 Connectinwhizttech Admission ChatBot
+🎓 ConnectinwhizttechAdmission ChatBot
 
 A simple command-line based chatbot built using Python that helps users explore and enroll in various technical and IT courses offered by Connectinwhizttech. It uses colorama for colored terminal output and provides detailed information about each course.
 
