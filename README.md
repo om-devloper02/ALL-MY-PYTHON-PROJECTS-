@@ -98,5 +98,103 @@ This project is for educational/demo purposes.
 
 
 
-===================Connectin Whizttech chatbot=======================
+===================Connectinwhizttech Voice Chatbo=======================
+
+
+# 🎓 Connectinwhizttech Voice Chatbot + Python Learning Tracker
+
+This repository contains two Python-based projects:
+
+1. 🗣️ A Speech-enabled Admission Chatbot for course inquiries using `speech_recognition`, `pyttsx3`, and `colorama`.
+2. 📘 A Python Learning Tracker class to help students monitor their progress and receive recommendations based on skill level.
+
+---
+
+## 📌 Features
+
+### 🗣️ Admission Chatbot
+
+- Accepts voice input via microphone.
+- Provides course details (career options, fees, dates).
+- Supports interactive Q&A via text-to-speech and speech-to-text.
+- Colored CLI output using `colorama`.
+
+### 📘 Python Learning Tracker
+
+- Tracks topics covered and exercises completed.
+- Calculates skill level (Beginner, Intermediate, Advanced).
+- Generates learning resource recommendations.
+- Saves and loads progress via JSON.
+
+---
+
+## 🛠️ Tech Stack
+
+- Python 3.7+
+- `speech_recognition`
+- `pyttsx3`
+- `colorama`
+- `json`
+- `datetime`
+
+---
+
+## 🧑‍💻 How to Run
+
+### 1. Install dependencies
+
+```bash
+pip install speechrecognition pyttsx3 colorama
+Ensure you have PyAudio installed:
+
+bash
+Copy
+Edit
+pip install pyaudio
+Note: If PyAudio installation fails, refer to platform-specific instructions.
+
+2. Run the Admission Chatbot
+bash
+Copy
+Edit
+python chatbot.py
+3. Use the Python Learning Tracker
+python
+Copy
+Edit
+from python_learning_tracker import PythonLearningTracker
+
+tracker = PythonLearningTracker("Omkar")
+tracker.update_topic_progress("OOP", 8)
+tracker.complete_exercise("Loops Challenge", "Medium")
+print(tracker.get_progress_summary())
+print(tracker.get_recommendations())
+🧪 Sample Output
+Voice-based admission chatbot interaction via terminal
+
+Skill level: Intermediate
+
+Recommendation: Intermediate Python courses and projects
+
+📂 File Structure
+bash
+Copy
+Edit
+📁 project_root/
+├── chatbot.py                  # Voice-based admission chatbot
+├── python_learning_tracker.py # Python skill progress tracker
+├── README.md                   # You're reading this!
+└── Omkar_progress.json         # Auto-generated progress file
+💡 Future Enhancements
+GUI interface using Tkinter or PyQt.
+
+Store chatbot conversations to CSV or DB.
+
+Add support for language translation.
+
+Integrate with online course APIs.
+
+📞 Contact
+For admissions or inquiries, contact Ms. Shruti Jain at Connectin Whizttech, Chhatrapati Sambhajinagar
+📱 Phone: 9921990176
 
